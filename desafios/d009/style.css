@@ -1,0 +1,19 @@
+Body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.thumbs{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    margin: 25px;
+}

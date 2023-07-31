@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: dimgray;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgb(128, 128, 128);
+            padding: 0 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        }
+        header nav{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            gap: 50px;
+            padding: 10px;
+            background-color:  #9B9B9B;
+            
+        }
+
+        nav a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            transition: all 1s;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+
+        main{
+            background-color: rgb(128, 128, 128);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        }
+        
+        article{
+            background-color: rgb(155, 155, 155);
+            padding: 10px;
+        }
+        article > aside{
+            background-color: rgb(141, 141, 141);
+            padding: 5px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p{
+            margin: 0;
+        }
+
+        #bola{
+            margin: auto;
+            margin-top: 40px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> O MEU SITE</h1>
+        <nav>
+            <a href="">Link0</a>
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>            
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos"></section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias AO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut sapiente quibusdam eligendi vel nulla? Laudantium, similique reiciendis qui necessitatibus, culpa consequuntur velit quidem dolor atque facere iusto nemo eius. Laboriosam?</p>
+                <aside>
+                    Artigo escrito por VsCode.Lorem
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por ElzenDev</p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>
