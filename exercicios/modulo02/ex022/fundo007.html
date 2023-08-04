@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertial</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #container{
+            position: relative;
+            height: 100vh;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            padding: 10px;
+        }
+
+        #conteudo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*No transform:translate() a primeira parte representada left(-) e rigth(+)*/
+            /*No trasnform:translate() a segunda parte repesenta Cima(-) e baixo(+)*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+    
+        }
+
+        #conteudo:hover{
+            background-color: gold;
+            cursor: pointer;
+        }
+            
+        
+        @keyframes rotation {
+            from{
+               
+                transform:rotate3d(1, 1, 1, 0deg)
+            }
+
+            to{
+                transform: rotate3d(52, 70, 10, 560deg);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+    <script>
+        const conteudo = document.getElementById('conteudo')
+        conteudo.addEventListener("click", ()=>{
+            conteudo.style.animation="";
+            setTimeout(() =>
+                conteudo.style.animation='rotation 5s', 5)
+        })
+    </script>
+</body>
+</html>
