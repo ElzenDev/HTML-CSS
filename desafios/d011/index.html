@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut in the Space</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(espaco.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #astronauta{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 25vw;
+            height: 50vh;
+            background-image: url(astronauta.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #astronauta:hover{
+            animation: float 3s both;
+        }
+        #astronauta:active{
+            animation: slide 5s backwards;
+        }
+
+        @keyframes float {
+            0%{
+                transform: translate(-50%, -50%) ;
+            }
+
+            20%{
+                transform: translate(-50%, -30%);
+            }
+
+            40%{
+                transform: translate(-50%, -70%);
+            }
+
+            80%{
+                transform: translate(-50%, -45%);
+            }
+
+            100%{
+                transform: translate(-50%, -50%) ;
+            }
+        }
+
+        @keyframes slide {
+           0%{
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            50%{
+                transform: translate(-10%, -50%) rotate(560deg);
+            }
+
+            100%{
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="astronauta">
+        
+    </section>
+</body>
+</html>
